@@ -1,0 +1,19 @@
+from random import *
+s=randint(1,10)
+print "Its time for luck!!"
+m,g=0,0
+while True:
+  print "For stopping the game, Type 'exit' "
+  h=raw_input("What can i do?")
+  if h=="exit":
+     break
+  c=input("Guess a no. bw 1-10:")
+  g+=1
+  if s==c:
+    print"Thats exactly correct"
+    m+=1
+  elif c>s:
+    print"You guessed too high"
+  elif c<s:
+    print"You guessed too low"
+print "Total guesses=",g,"\n","Correct guesses=",m
